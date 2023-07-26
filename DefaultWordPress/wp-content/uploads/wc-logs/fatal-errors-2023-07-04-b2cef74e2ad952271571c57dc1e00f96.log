@@ -1,0 +1,123 @@
+2023-07-04T16:06:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_attachment_image_url(), 0 passed in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php on line 160 and at least 1 expected in C:\xampp\htdocs\DefaultWordPress\wp-includes\media.php:1141
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php(160): wp_get_attachment_image_url()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(355): GetHotPrd('', '', 'pro_km_block')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(pro_km...', 'do_shortcode_ta...', '<div class="col...')
+#4 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('<div class="col...')
+#5 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\shortcodes\row.php(181): flatsome_contentfix('<div class="col...')
+#6 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(355): ux_col(Array, '\n\n[title text="...', 'col')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(pro_km...', 'do_shortcode_ta...', '\n\n[col span__sm...')
+#9 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n\n[col span__sm...')
+#10 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\shortcodes\row.php(73): flatsome_contentfix('\n\n[col span__sm...')
+#11 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(355): ux_row(Array, '\n\n[col span__sm...', 'row')
+#12 [internal function]: do_shortcode_tag(Array)
+#13 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(pro_km...', 'do_shortcode_ta...', '\t<section class...')
+#14 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\shortcodes\sections.php(188): do_shortcode('\t<section class...')
+#15 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(355): ux_section(Array, '\t<section class...', 'section')
+#16 [internal function]: do_shortcode_tag(Array)
+#17 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(pro_km...', 'do_shortcode_ta...', '<div class="blo...')
+#18 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\post-types\post-type-ux-blocks.php(155): do_shortcode('<div class="blo...')
+#19 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(355): block_shortcode(Array, '', 'block')
+#20 [internal function]: do_shortcode_tag(Array)
+#21 C:\xampp\htdocs\DefaultWordPress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(block)...', 'do_shortcode_ta...', '[block id="tran...')
+#22 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('[block id="tran...')
+#23 C:\xampp\htdocs\DefaultWordPress\wp-includes\class-wp-hook.php(308): flatsome_contentfix('[block id="tran...')
+#24 C:\xampp\htdocs\DefaultWordPress\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>[block id="t...', Array)
+#25 C:\xampp\htdocs\DefaultWordPress\wp-includes\post-template.php(255): apply_filters('the_content', '[block id="tran...')
+#26 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome\page-blank.php(13): the_content()
+#27 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#28 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#30 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-includes\media.php on line 1141
+
+2023-07-04T16:10:54+00:00 CRITICAL Cannot redeclare GetHotPrd() (previously declared in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php:126) in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php on line 187
+
+2023-07-04T16:10:56+00:00 CRITICAL Cannot redeclare GetHotPrd() (previously declared in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php:126) in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php on line 187
+
+2023-07-04T16:16:26+00:00 CRITICAL syntax error, unexpected identifier "alse" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\functions.php on line 5
+
+2023-07-04T16:54:49+00:00 CRITICAL Uncaught Error: Call to a member function get_rating_count() on null in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php:28
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1637): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php(14): woocommerce_template_single_rating()
+#3 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php on line 28
+
+2023-07-04T16:54:52+00:00 CRITICAL Uncaught Error: Call to a member function get_rating_count() on null in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php:28
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1637): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php(14): woocommerce_template_single_rating()
+#3 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php on line 28
+
+2023-07-04T16:55:17+00:00 CRITICAL Uncaught Error: Call to a member function get_rating_count() on null in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php:28
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1637): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php(14): woocommerce_template_single_rating()
+#3 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\rating.php on line 28
+
+2023-07-04T16:59:19+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\product-image-wide.php:28
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#2 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\product-image.php(31): wc_get_template_part('single-product/...', 'wide')
+#3 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\DefaultWordPress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1556): wc_get_template('single-product/...')
+#5 C:\xampp\htdocs\DefaultWordPress\wp-includes\class-wp-hook.php(308): woocommerce_show_product_images('')
+#6 C:\xampp\htdocs\DefaultWordPress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\DefaultWordPress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php(10): do_action('woocommerce_bef...')
+#9 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\woocommerce\single-product\product-image-wide.php on line 28
+
+2023-07-04T17:05:13+00:00 CRITICAL syntax error, unexpected identifier "esc_url" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 48
+
+2023-07-04T17:05:38+00:00 CRITICAL syntax error, unexpected identifier "esc_url" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 49
+
+2023-07-04T17:05:40+00:00 CRITICAL syntax error, unexpected identifier "esc_url" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 49
+
+2023-07-04T17:06:02+00:00 CRITICAL syntax error, unexpected identifier "esc_url" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 49
+
+2023-07-04T17:06:35+00:00 CRITICAL Unclosed '{' on line 45 does not match ')' in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 49
+
+2023-07-04T17:10:58+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 48
+
+2023-07-04T17:13:30+00:00 CRITICAL Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in C:\xampp\htdocs\DefaultWordPress\wp-includes\formatting.php:4415
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-includes\formatting.php(4415): ltrim(Array)
+#1 C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php(167): esc_url(Array)
+#2 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-includes\formatting.php on line 4415
+
+2023-07-04T17:13:48+00:00 CRITICAL syntax error, unexpected token "foreach", expecting "," or ";" in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 167
+
+2023-07-04T17:27:18+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php:95
+Stack trace:
+#0 C:\xampp\htdocs\DefaultWordPress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\DefaultWordPress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\DefaultWordPress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\DefaultWordPress\wp-content\themes\flatsome-child\single-duhoc.php on line 95
+
